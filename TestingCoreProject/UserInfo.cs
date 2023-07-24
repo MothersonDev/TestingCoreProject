@@ -2,7 +2,7 @@
 {
     public class UserInfo
     {
-        pubkjlkjsdkfl
-            kjs
+     //   pubkjlkjsdkfl
+    //        kjs
     }
 }
