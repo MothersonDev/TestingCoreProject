@@ -1,0 +1,23 @@
+name: Custom Validation - Naming Conventions
+
+on:
+  push:
+    branches:
+      - main # Adjust this to the branch you want to enforce validations on
+
+jobs:
+  validate_naming_conventions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Specify the Node.js version you want to use
+
+      - name: Run custom validation
+        run: |
+          python check_naming_conventions.py
